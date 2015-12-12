@@ -1,0 +1,36 @@
+@include font-face(BPreplay, fonts/BPreplay, null, null, otf);
+@include font-face(BPreplayBold, fonts/BPreplayBold, null, null, otf);
+
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: BPreplayBold;
+  background: $background_body;
+}
+
+.container {
+  width: 100%;
+  margin: 0 auto;
+}
+
+p {
+  font-family: BPreplay;
+}
+
+h1 {
+  color: #384047;
+}
+
+h2 {
+  color: #4b5658;
+}
+
+h3 {
+  color: #6a787c;
+}
+
+a {
+  text-decoration: none;
+}

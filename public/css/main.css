@@ -1,3 +1,225 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
 
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+@font-face {
+  font-family: "BPreplay";
+  src: url("fonts/BPreplay.otf") format("opentype"); }
+@font-face {
+  font-family: "BPreplayBold";
+  src: url("fonts/BPreplayBold.otf") format("opentype"); }
+*, *:before, *:after {
+  box-sizing: border-box; }
+
+body {
+  font-family: BPreplayBold;
+  background: #EDEFF0; }
+
+.container {
+  width: 100%;
+  margin: 0 auto; }
+
+p {
+  font-family: BPreplay; }
+
+h1 {
+  color: #384047; }
+
+h2 {
+  color: #4b5658; }
+
+h3 {
+  color: #6a787c; }
+
+a {
+  text-decoration: none; }
+
+/***********
+Site Content
+***********/
+.page-header {
+  width: 90%;
+  height: 80px;
+  margin: 0 auto;
+  padding: 30px 0 15px;
+  box-shadow: 0px 8px 6px -6px #D4D9DD; }
+  .page-header h1 {
+    float: left;
+    font-size: 18px;
+    line-height: 28px; }
+  .page-header ul {
+    float: right;
+    display: inline-block; }
+  .page-header li {
+    display: inline-block;
+    padding: 0 20px; }
+    .page-header li img {
+      vertical-align: middle; }
+    .page-header li .profile-points {
+      color: #D4D9DD;
+      font-size: 18px;
+      margin-right: 5px; }
+    .page-header li .profile-avatar {
+      padding: 2px;
+      border: 2px solid #D4D9DD;
+      border-radius: 50%;
+      margin-right: 5px; }
+    .page-header li .continue {
+      position: relative;
+      left: 20px;
+      padding: 6px;
+      border: 2px solid #D4D9DD;
+      border-radius: 50%; }
+    .page-header li .nav-border-spacer {
+      border-right: 2px solid #D4D9DD;
+      border-left: 2px solid #D4D9DD;
+      width: 76px;
+      margin: 0 -20px; }
+
+.course-list {
+  content: "";
+  display: table;
+  clear: both; }
+
+.course-container {
+  background: #FFFFFF;
+  width: 42.5%;
+  display: inline-block;
+  float: left;
+  margin: 15px 0 15px 5%;
+  border-radius: 5px; }
+  .course-container .course-header {
+    line-height: 58px;
+    border-radius: 5px 5px 0 0; }
+    .course-container .course-header img {
+      display: inline-block;
+      position: relative;
+      top: 3px;
+      padding-left: 30px;
+      padding-right: 15px; }
+    .course-container .course-header ul {
+      display: inline-block; }
+    .course-container .course-header li {
+      display: inline-block;
+      height: 10px;
+      width: 10px;
+      vertical-align: middle;
+      border: 2px solid rgba(255, 255, 255, 0.3);
+      border-radius: 50%;
+      margin-right: 2px; }
+    .course-container .course-header .course-duration {
+      float: right;
+      padding-right: 30px;
+      color: #fff;
+      font-size: 14px; }
+  .course-container .course-content {
+    margin: 30px 30px 15px; }
+    .course-container .course-content h3 {
+      margin-bottom: 10px;
+      font-size: 14px; }
+    .course-container .course-content h2 {
+      margin-bottom: 25px; }
+    .course-container .course-content p {
+      font-size: 14px;
+      max-height: 40px;
+      overflow: hidden;
+      line-height: 21px; }
+  .course-container .course-footer {
+    display: inline-block;
+    margin: 30px 30px;
+    width: 87.75%;
+    color: #6a787c; }
+    .course-container .course-footer li {
+      position: relative;
+      border: 2px solid #D4D9DD;
+      border-radius: 50%;
+      float: left;
+      border: 2px solid #D4D9DD; }
+    .course-container .course-footer .footer-tags {
+      float: left;
+      display: inline-block; }
+      .course-container .course-footer .footer-tags li {
+        padding: 10px;
+        margin-right: 10px;
+        border-radius: 20px; }
+    .course-container .course-footer .footer-buttons {
+      float: right;
+      display: inline-block; }
+      .course-container .course-footer .footer-buttons li {
+        padding: 10px;
+        margin-left: 10px;
+        border-radius: 50%; }
+
+.java .course-header {
+  background: #2C9676; }
+.java a {
+  color: #2C9676; }
+
+.python .course-header {
+  background: #F092B0; }
+
+.wordpress .course-header {
+  background: #838CC7; }
+
+.trailers-box {
+  position: absolute;
+  width: 217px;
+  height: 143px;
+  z-index: 1;
+  bottom: 65%;
+  right: -245%; }
+  .trailers-box img {
+    position: absolute; }
+  .trailers-box h2 {
+    position: relative;
+    padding: 20px 25px 10px 25px;
+    font-size: 16px; }
+  .trailers-box p {
+    position: relative;
+    padding: 0 25px 15px;
+    font-size: 14px; }
 
 /*# sourceMappingURL=main.css.map */
